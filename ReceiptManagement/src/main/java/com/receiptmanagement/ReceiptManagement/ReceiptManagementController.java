@@ -160,14 +160,14 @@ public class ReceiptManagementController {
             JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
             mailSender.setHost("smtp.gmail.com");
             mailSender.setPort(587);
-            mailSender.setUsername("RonWonBot@gmail.com");
-            mailSender.setPassword("Hello@12345");
+            mailSender.setUsername("xyz@gmail.com");
+            mailSender.setPassword("");
             
             Properties properties = new Properties();
             properties.setProperty("mail.smtp.auth", "true");
             properties.setProperty("mail.smtp.starttls.enable", "true");
             mailSender.setJavaMailProperties(properties);
-            String from = "RonWonBot@gmail.com";
+            String from = "xyz@gmail.com";
             String to = mailId;
                 
             MimeMessage message = mailSender.createMimeMessage();
